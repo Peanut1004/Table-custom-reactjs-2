@@ -1,0 +1,235 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*reset*/
+body {
+  overflow: hidden;
+  padding: 30px;
+  background-color: #f5f6f7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+button {
+  border: none;
+  border-radius: 2px;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #119744;
+  background-color: #119744;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  color: #fff;
+  border: 1px solid #119744;
+  background-color: #119744;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  padding: 0 10px;
+}
+
+input[type="checkbox"],
+input[type="type"],
+input[type="password"],
+input[type="radio"],
+input[type="search"],
+input:focus-visible,
+input:visited {
+  outline-style: none;
+  box-shadow: none;
+  border: 1px solid #119744;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+a:visited,
+a:hover,
+a:active {
+  color: #119744;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+/*component*/
+.cart-component {
+  position: relative;
+}
+
+/*cart*/
+.cart-wrap {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.cart-info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cart-info table thead tr {
+  color: #fff;
+  font-weight: 700;
+  background-color: #119744;
+}
+
+.cart-info table thead tr td:nth-child(1) {
+  width: 2%;
+}
+
+.cart-info table thead tr td:nth-child(2) {
+  width: 30%;
+}
+
+.cart-info table thead tr td:nth-child(3) {
+  width: 8%;
+}
+
+.cart-info table thead tr td:nth-child(4) {
+  width: 20%;
+}
+
+.cart-info table thead tr td:nth-child(5) {
+  width: 30%;
+}
+
+.cart-info table thead tr td:nth-child(6) {
+  width: 10%;
+}
+
+tbody,
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #878383;
+}
+
+.table-cart thead {
+  background-color: #4a8546;
+}
+
+.table-cart thead tr th {
+  padding: 15px 0;
+}
+
+.info-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form {
+  padding: 50px 100px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  background-color: #d1d1d1;
+}
+
+.form .group-input {
+  margin-bottom: 15px;
+}
+
+.form .group-input label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.form .form-button button {
+  margin-right: 10px;
+}
+
+/*modal*/
+.modal {
+  width: 500px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  color: #fff;
+  background-color: #000;
+}
+
+.modal .modal-title {
+  padding: 14px 24px;
+  background-color: #711b1b;
+}
+
+.modal .modal-content {
+  padding: 20px 24px;
+}
+
+.modal .modal-content p {
+  margin-bottom: 20px;
+}
+
+.modal .modal-button {
+  text-align: center;
+}
+
+.modal .modal-button button {
+  padding: 10px 30px;
+}
